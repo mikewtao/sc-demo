@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.mipush.sdk:MiPush_SDK_Server:2.2.18">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/mipush/sdk/MiPush_SDK_Server/2.2.18/MiPush_SDK_Server-2.2.18.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/mipush/sdk/MiPush_SDK_Server/2.2.18/MiPush_SDK_Server-2.2.18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/mipush/sdk/MiPush_SDK_Server/2.2.18/MiPush_SDK_Server-2.2.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

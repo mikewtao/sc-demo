@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="feignclient" />
+        <module name="pojo" />
+        <module name="productservice" />
+        <module name="userservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
+      <module name="feignclient" target="1.8" />
+      <module name="pojo" target="1.8" />
+      <module name="productservice" target="1.8" />
+      <module name="sc" target="1.5" />
+      <module name="sc-eureka" target="1.5" />
+      <module name="sc-eureka (1)" target="1.8" />
+      <module name="userservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

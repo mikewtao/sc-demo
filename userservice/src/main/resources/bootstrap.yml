@@ -1,0 +1,42 @@
+eureka:
+    client:
+        serviceUrl:
+            #服务注册中心地址
+            defaultZone: http://localhost:8101/eureka/
+    # 指定此实例的ip
+    instance:
+# 注册时使用ip而不是主机名
+        prefer-ip-address: true
+        instance-id: sc-userservice:${spring.cloud.client.ipAddress}:${server.port}
+spring:
+    http:
+      encoding:
+        charset: UTF-8
+        enabled: true
+    application:
+        #应用名称
+        name: sc-userservice
+    #数据库连接
+    datasource:
+        url: jdbc:oracle:thin:@//192.168.1.215:1521/lottery
+        username: cpweb
+        password: cpweb
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        type: com.alibaba.druid.pool.DruidDataSource
+        initialSize: 5    # 初始化连接数
+        minIdle: 5        # 最小空闲连接数
+        maxActive: 50     # 最大活动连接数
+        maxWait: 60000    # 获取连接等待超时的时间，单位毫秒
+        timeBetweenEvictionRunsMillis: 60000  # 间隔60秒进行一次检测，检测需要关闭的空闲连接，单位毫秒
+        minEvictableIdleTimeMillis: 300000    # 池中连接最小生存的时间300秒，单位是毫秒
+        validationQuery: SELECT 2 FROM DUAL   # 检测连接使用的SQL
+        testWhileIdle: true                   # 连接是否被空闲连接回收器进行检验,如果检测失败,则连接将被从池中去除
+        testOnBorrow: false                   # 从池中取出连接前进行检验
+        testOnReturn: false                   # 归还连接到池中前进行检验
+        filters: config
+        connectionProperties: config.decrypt=false
+#端口
+server:
+    port: 7001
+    tomcat:
+        uri-encoding: UTF-8
